@@ -120,7 +120,14 @@
   <hr style="margin-top:40px;">
   <p class="muted">
     <a href="./archive/">Archived website</a>
+    &middot; Last updated: <span id="updated"></span>
   </p>
+
+  <script>
+    document.getElementById('updated').textContent =
+      new Date(document.lastModified).toLocaleDateString('en-GB',
+        { day: 'numeric', month: 'long', year: 'numeric' });
+  </script>
 
 </body>
 </html>
