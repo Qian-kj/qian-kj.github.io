@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
-    <pattern id="lines" width="64" height="5" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="2.5" x2="64" y2="2.5" stroke="#000" stroke-width="1.6"/>
+    <pattern id="lines" width="64" height="9" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="4.5" x2="64" y2="4.5" stroke="#0066ff" stroke-width="1.6"/>
     </pattern>
   </defs>
   <rect x="2" y="2" width="60" height="60" rx="12" fill="#fff"/>
