@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEYETR2ZN7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MEYETR2ZN7');
+    </script>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="AuthorsKejiang Qian, and Yijing Li BackgroundIn the aim to support London’s safer recovery from the pandemic by improving road safety intelligently, this study investigated the spatiotemporal patterns">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes">
+<meta property="og:url" content="http://example.com/2022/08/01/safer-traffic/index.html">
+<meta property="og:site_name" content="&quot;Brian&quot; Kejiang Qian">
+<meta property="og:description" content="AuthorsKejiang Qian, and Yijing Li BackgroundIn the aim to support London’s safer recovery from the pandemic by improving road safety intelligently, this study investigated the spatiotemporal patterns">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2022/08/01/safer-traffic/covid_8.png">
+<meta property="og:image" content="http://example.com/2022/08/01/safer-traffic/covid_1.png">
+<meta property="og:image" content="http://example.com/2022/08/01/safer-traffic/covid_2.png">
+<meta property="og:image" content="http://example.com/2022/08/01/safer-traffic/covid_3.png">
+<meta property="og:image" content="http://example.com/2022/08/01/safer-traffic/covid_4.png">
+<meta property="og:image" content="http://example.com/2022/08/01/safer-traffic/covid_9.png">
+<meta property="og:image" content="http://example.com/2022/08/01/safer-traffic/covid_6.png">
+<meta property="og:image" content="http://example.com/2022/08/01/safer-traffic/covid_7.png">
+<meta property="article:published_time" content="2022-07-31T23:22:40.000Z">
+<meta property="article:modified_time" content="2023-12-26T11:13:12.264Z">
+<meta property="article:author" content="Kejiang Qian">
+<meta property="article:tag" content="Urban Computing, Data Mining, Social Good">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/08/01/safer-traffic/covid_8.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/archive/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/archive/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/archive/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/archive/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/archive/">Home</a></li><!--
+     --><!--
+       --><li><a href="/archive/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archive/archives/">Gallery</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=pWApHscAAAAJ&hl=zh-CN">Research</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/archive/2022/12/22/socity-dao/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/archive/2022/06/23/DAO-sim/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2022/08/01/safer-traffic/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2022/08/01/safer-traffic/&text=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2022/08/01/safer-traffic/&title=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2022/08/01/safer-traffic/&is_video=false&description=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes&body=Check out this article: http://example.com/2022/08/01/safer-traffic/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2022/08/01/safer-traffic/&title=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2022/08/01/safer-traffic/&title=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2022/08/01/safer-traffic/&title=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2022/08/01/safer-traffic/&title=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2022/08/01/safer-traffic/&name=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2022/08/01/safer-traffic/&t=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Authors"><span class="toc-number">1.</span> <span class="toc-text">Authors</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Background"><span class="toc-number">2.</span> <span class="toc-text">Background</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Aim-amp-Methodology"><span class="toc-number">3.</span> <span class="toc-text">Aim &amp; Methodology</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Results"><span class="toc-number">4.</span> <span class="toc-text">Results</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Temporal-patterns-of-car-crashes"><span class="toc-number">4.1.</span> <span class="toc-text">Temporal patterns of car crashes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Spatial-Analysis-of-Road-Trafc-Crashes"><span class="toc-number">4.2.</span> <span class="toc-text">Spatial Analysis of Road Trafc Crashes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pattern-analysis-of-road-trafc-crashes-during-weekdays-and-weekends"><span class="toc-number">4.3.</span> <span class="toc-text">Pattern analysis of road trafc crashes during weekdays and weekends</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Paper-Link"><span class="toc-number">5.</span> <span class="toc-text">Paper Link</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Kejiang Qian</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2022-07-31T23:22:40.000Z" itemprop="datePublished">2022-08-01</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/archive/tags/Urban-Computing-Data-Mining-Social-Good/" rel="tag">Urban Computing, Data Mining, Social Good</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="Authors"><a href="#Authors" class="headerlink" title="Authors"></a>Authors</h1><p><strong>Kejiang Qian</strong>, and Yijing Li</p>
+<h1 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h1><p>In the aim to support London’s safer recovery from the pandemic by improving road safety intelligently, this study investigated the spatiotemporal patterns of age-involved car crashes and affecting factors, upon answering two main research questions: (1)”What are the spatial and temporal patterns of car crashes as well as their changes in two typical years, 2019 and 2020, in London, and how the influential factors work?”; (2)”What are the spatiotemporal patterns of casualty by age groups, and how people’s daily activities affect the patterns pre- and para- the pandemic”? </p>
+<h1 id="Aim-amp-Methodology"><a href="#Aim-amp-Methodology" class="headerlink" title="Aim &amp; Methodology"></a>Aim &amp; Methodology</h1><p>Three approaches, i.e., spatial analysis (network Kernel Density Estimation, NetKDE), factor analysis, and spatiotemporal data mining (tensor decomposition), had been implemented to identify the temporal patterns of car crashes on weekly and daily basis respectively, detect the crashes’ hot spots, and to gain better understanding the effect from citizens’ daily activity on crashes’ patterns pre- and para- the pandemic. It had been found from the study that car crashes mainly clustered in the central part of London, especially busier areas around denser hubs of point-of-interest (POIs); the POIs, as a reflector for citizens’ daily activities and travel behaviours, can be of help to gain a better understanding of the crashes’ patterns, upon further assessment on interactions through the geographical detector; the crashes’ casualty patterns varied by age group, with distinctive relationships between POIs and crashes’ pattern for corresponding age group categorised. </p>
+<p><img src="/archive/2022/08/01/safer-traffic/covid_8.png" alt="img"><br>Figure 1: Tensor decomposition of tensors</p>
+<h1 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h1><p>In all, the paper provided an in-depth exploratory analysis of car crashes and their casualty patterns in London to facilitate deployment policies towards post-pandemic safer recovery upon COVID-19.</p>
+<h2 id="Temporal-patterns-of-car-crashes"><a href="#Temporal-patterns-of-car-crashes" class="headerlink" title="Temporal patterns of car crashes"></a>Temporal patterns of car crashes</h2><p><img src="/archive/2022/08/01/safer-traffic/covid_1.png" alt="img"><br>Figure 2: SWI of trafc crashes in each time of a week in 2019 &amp; 2020.<br><img src="/archive/2022/08/01/safer-traffic/covid_2.png" alt="img"><br>Figure 3: SWI index of casualties changing over time of weekdays in 2019 &amp; 2020.<br><img src="/archive/2022/08/01/safer-traffic/covid_3.png" alt="img"><br>Figure 4: SWI index of casualties changing over time of weekends in 2019 &amp; 2020.</p>
+<h2 id="Spatial-Analysis-of-Road-Trafc-Crashes"><a href="#Spatial-Analysis-of-Road-Trafc-Crashes" class="headerlink" title="Spatial Analysis of Road Trafc Crashes"></a>Spatial Analysis of Road Trafc Crashes</h2><p><img src="/archive/2022/08/01/safer-traffic/covid_4.png" alt="img"><br>Figure 5: Network KDE of crashes in 2019 &amp; 2020<br><img src="/archive/2022/08/01/safer-traffic/covid_9.png" alt="img"><br>Figure 6: Local Indicators of Spatial Association (LISA) cluster map for crashes in 2019 &amp; 2020</p>
+<h2 id="Pattern-analysis-of-road-trafc-crashes-during-weekdays-and-weekends"><a href="#Pattern-analysis-of-road-trafc-crashes-during-weekdays-and-weekends" class="headerlink" title="Pattern analysis of road trafc crashes during weekdays and weekends"></a>Pattern analysis of road trafc crashes during weekdays and weekends</h2><p><img src="/archive/2022/08/01/safer-traffic/covid_6.png" alt="img"><br>Figure 7: Decomposed patterns of 2019-weekday &amp; 2020-weekday tensor. (a) and (b) Temporal pattern; (c) and (d) Age pattern; (e) and (f) Examples of matrices of Core tensor. The matrices of core tensor are only for illustrating our workfow but not for comparative analysis, so one example of this matrix is shown for two years respective.<br><img src="/archive/2022/08/01/safer-traffic/covid_7.png" alt="img"><br>Figure 8: Decomposed patterns of weekday tensor. (a) Temporal pattern; (b) Age pattern; (c) Matrices of Core tensor.</p>
+<h1 id="Paper-Link"><a href="#Paper-Link" class="headerlink" title="Paper Link"></a>Paper Link</h1><p>View our code: <a target="_blank" rel="noopener" href="https://github.com/Qian-kj/Spatio_temporal_data_mining_car_crashes_london">Gitub</a><br>View our paper: <a target="_blank" rel="noopener" href="https://link.springer.com/article/10.1007/s12061-023-09533-y">Applied Spatial Analysis and Policy</a></p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/archive/">Home</a></li>
+         
+          <li><a href="/archive/about/">About</a></li>
+         
+          <li><a href="/archive/archives/">Gallery</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=pWApHscAAAAJ&hl=zh-CN">Research</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Authors"><span class="toc-number">1.</span> <span class="toc-text">Authors</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Background"><span class="toc-number">2.</span> <span class="toc-text">Background</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Aim-amp-Methodology"><span class="toc-number">3.</span> <span class="toc-text">Aim &amp; Methodology</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Results"><span class="toc-number">4.</span> <span class="toc-text">Results</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Temporal-patterns-of-car-crashes"><span class="toc-number">4.1.</span> <span class="toc-text">Temporal patterns of car crashes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Spatial-Analysis-of-Road-Trafc-Crashes"><span class="toc-number">4.2.</span> <span class="toc-text">Spatial Analysis of Road Trafc Crashes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pattern-analysis-of-road-trafc-crashes-during-weekdays-and-weekends"><span class="toc-number">4.3.</span> <span class="toc-text">Pattern analysis of road trafc crashes during weekdays and weekends</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Paper-Link"><span class="toc-number">5.</span> <span class="toc-text">Paper Link</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2022/08/01/safer-traffic/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2022/08/01/safer-traffic/&text=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2022/08/01/safer-traffic/&title=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2022/08/01/safer-traffic/&is_video=false&description=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes&body=Check out this article: http://example.com/2022/08/01/safer-traffic/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2022/08/01/safer-traffic/&title=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2022/08/01/safer-traffic/&title=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2022/08/01/safer-traffic/&title=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2022/08/01/safer-traffic/&title=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2022/08/01/safer-traffic/&name=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2022/08/01/safer-traffic/&t=Safer Traffic Recovery from the Pandemic in London--Spatiotemporal Data Mining of Car Crashes"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2023-2025
+    Kejiang Qian
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/archive/">Home</a></li><!--
+     --><!--
+       --><li><a href="/archive/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archive/archives/">Gallery</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=pWApHscAAAAJ&hl=zh-CN">Research</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/archive/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
